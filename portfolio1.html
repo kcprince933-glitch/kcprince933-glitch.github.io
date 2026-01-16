@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Developer Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        :root {
+            --bg: #0f172a;
+            --card: #111827;
+            --text: #e5e7eb;
+            --muted: #9ca3af;
+            --accent: #38bdf8;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", system-ui, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #020617, #0f172a);
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 4rem 1.5rem;
+        }
+
+        /* HERO */
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1.2rem;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.2rem, 5vw, 4rem);
+            font-weight: 700;
+            letter-spacing: -1px;
+        }
+
+        .hero span {
+            color: var(--accent);
+        }
+
+        .hero p {
+            max-width: 720px;
+            font-size: 1.05rem;
+            color: var(--muted);
+        }
+
+        /* SECTION */
+        section {
+            margin-top: 6rem;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid var(--accent);
+            padding-left: 1rem;
+        }
+
+        /* ABOUT */
+        .about {
+            background: rgba(255, 255, 255, 0.02);
+            padding: 2rem;
+            border-radius: 12px;
+        }
+
+        /* TIMELINE */
+        .timeline {
+            display: grid;
+            gap: 1.5rem;
+        }
+
+        .timeline-item {
+            background: var(--card);
+            padding: 1.5rem;
+            border-radius: 12px;
+            border-left: 3px solid var(--accent);
+        }
+
+        .timeline-item h3 {
+            color: var(--accent);
+            margin-bottom: 0.3rem;
+        }
+
+        .timeline-item p {
+            color: var(--muted);
+            font-size: 0.95rem;
+        }
+
+        /* SKILLS */
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .skill-card {
+            background: var(--card);
+            padding: 1.5rem;
+            border-radius: 12px;
+            transition: transform 0.3s ease;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-6px);
+        }
+
+        .skill-card h3 {
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+        }
+
+        .skill-card p {
+            color: var(--muted);
+            font-size: 0.95rem;
+        }
+
+        /* CONTACT */
+        .contact {
+            background: rgba(255,255,255,0.02);
+            padding: 2rem;
+            border-radius: 12px;
+        }
+
+        .contact-item {
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+
+        .contact-item span {
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        /* PHILOSOPHY */
+        .philosophy {
+            background: linear-gradient(135deg, #020617, #020617);
+            padding: 2.5rem;
+            border-radius: 16px;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .philosophy blockquote {
+            font-size: 1.2rem;
+            font-style: italic;
+            color: #d1d5db;
+            margin-bottom: 1rem;
+        }
+
+        /* FOOTER */
+        footer {
+            margin-top: 6rem;
+            padding: 2rem 0;
+            text-align: center;
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            .hero {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- HERO -->
+        <div class="hero">
+            <h1>Hi, I’m <span>a Developer</span></h1>
+            <p>
+                A coder since class 7 with strong foundations in DSA,
+                passionate about Web Development and curious about AI & ML.
+                I enjoy philosophical thinking and learning from entrepreneurs.
+            </p>
+        </div>
+
+        <!-- ABOUT -->
+        <section>
+            <h2>About Me</h2>
+            <div class="about">
+                <p>
+                    I am a self-motivated developer with over 5 years of coding experience.
+                    Starting early helped me develop disciplined learning habits and
+                    strong logical thinking.
+                </p>
+                <br>
+                <p>
+                    I see software as more than code — it is a system of ideas.
+                    I actively listen to entrepreneurs and philosophers to
+                    develop clarity, patience, and long-term vision.
+                </p>
+            </div>
+        </section>
+
+        <!-- QUALIFICATIONS -->
+        <section>
+            <h2>Qualifications & Journey</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Class 11 (Currently Studying)</h3>
+                    <p>
+                        Continuing academic studies while advancing skills
+                        in DSA, Web Development, and AI/ML.
+                    </p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>Class 10 — A+ GPA</h3>
+                    <p>
+                        Achieved A+ GPA in class 10 with consistent academic
+                        excellence from classes 8 to 10.
+                    </p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>Started Coding — Class 7</h3>
+                    <p>
+                        Began programming early, driven by curiosity
+                        and love for problem-solving.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section>
+            <h2>What I Do</h2>
+            <div class="skills">
+                <div class="skill-card">
+                    <h3>Data Structures & Algorithms</h3>
+                    <p>
+                        Strong problem-solving skills with a focus
+                        on efficiency and clarity.
+                    </p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Web Development</h3>
+                    <p>
+                        Building clean, intuitive interfaces
+                        using solid UI/UX principles.
+                    </p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>AI & ML Enthusiast</h3>
+                    <p>
+                        Exploring intelligent systems and
+                        data-driven models.
+                    </p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Philosophy & Mindset</h3>
+                    <p>
+                        Influenced by thinkers and entrepreneurs,
+                        focused on systems and long-term growth.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section>
+            <h2>Contact</h2>
+            <div class="contact">
+                <div class="contact-item">
+                    <span>WhatsApp:</span> 9888888888
+                </div>
+                <div class="contact-item">
+                    <span>Email:</span> abc@gmail.com
+                </div>
+            </div>
+        </section>
+
+        <!-- PHILOSOPHY -->
+        <section>
+            <h2>Philosophy</h2>
+            <div class="philosophy">
+                <blockquote>
+                    “Start early. Think deeply. Build things that matter.”
+                </blockquote>
+                <p class="muted">
+                    Consistency beats intensity, and clarity of thought
+                    leads to meaningful creation.
+                </p>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            Built with curiosity, discipline, and code.
+        </footer>
+
+    </div>
+
+</body>
+</html>
